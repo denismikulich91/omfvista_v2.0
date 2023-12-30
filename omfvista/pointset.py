@@ -17,16 +17,16 @@ def point_set_to_vtk(pse, origin=(0.0, 0.0, 0.0)):
     """Convert the point set to a :class:`pyvista.PolyData` data object.
 
     Args:
-        pse (:class:`omf.pointset.PointSetElement`): The point set to convert
+        pse (:class:`omf.pointset.PointSet`): The point set to convert
 
     Return:
         :class:`pyvista.PolyData`
     """
-    points = np.array(pse.geometry.vertices)
+    points = np.array(pse.vertices)
     output = pyvista.PolyData(points)
 
     # Now add point data:
-    add_data(output, pse.data)
+    # add_data(output, pse)
 
     add_texture_coordinates(output, pse.textures, pse.name)
 

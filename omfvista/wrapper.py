@@ -104,7 +104,7 @@ def wrap(data, origin=(0.0, 0.0, 0.0)):
 
 def project_to_vtk(project, load_textures=False):
     """Converts an OMF project (:class:`omf.base.Project`) to a
-    :class:`pyvista.MultiBlock` data boject
+    :class:`pyvista.MultiBlock` data project
     """
     # Iterate over the elements and add converted VTK objects a MultiBlock
     data = pyvista.MultiBlock()
