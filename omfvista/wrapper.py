@@ -74,8 +74,7 @@ def wrap(data, origin=(0.0, 0.0, 0.0)):
         >>> import omfvista
 
         >>> # Read all elements
-        >>> reader = omf.OMFReader('test_file.omf')
-        >>> project = reader.get_project()
+        >>> project = omf.load('test_file.omf')
 
         >>> # Iterate over the elements and add converted VTK objects to dictionary:
         >>> data = dict()
@@ -123,23 +122,44 @@ def project_to_vtk(project, load_textures=False):
 
 def load_project(filename, load_textures=False):
     """Loads an OMF project file into a :class:`pyvista.MultiBlock` dataset"""
-    reader = omf.OMFReader(filename)
-    project = reader.get_project()
+    project = omf.load(filename)
+    print(project)
     return project_to_vtk(project, load_textures=load_textures)
 
 
+# WRAPPERS = {
+#     "LineSetElement": line_set_to_vtk,
+#     "PointSetElement": point_set_to_vtk,
+#     # Surfaces
+#     "SurfaceGeometry": surface_geom_to_vtk,
+#     "SurfaceGridGeometry": surface_grid_geom_to_vtk,
+#     "SurfaceElement": surface_to_vtk,
+#     "ImageTexture": texture_to_vtk,
+#     # Volumes
+#     "VolumeGridGeometry": volume_grid_geom_to_vtk,
+#     "VolumeElement": volume_to_vtk,
+#     "Project": project_to_vtk,
+# }
 WRAPPERS = {
-    "LineSetElement": line_set_to_vtk,
-    "PointSetElement": point_set_to_vtk,
-    # Surfaces
-    "SurfaceGeometry": surface_geom_to_vtk,
-    "SurfaceGridGeometry": surface_grid_geom_to_vtk,
-    "SurfaceElement": surface_to_vtk,
+    "LineSet": line_set_to_vtk,
+    "PointSet": point_set_to_vtk,
+    # Textures
     "ImageTexture": texture_to_vtk,
-    # Volumes
-    "VolumeGridGeometry": volume_grid_geom_to_vtk,
-    "VolumeElement": volume_to_vtk,
-    "Project": project_to_vtk,
+    "Image": texture_to_vtk,
+    "ProjectedTexture": texture_to_vtk,
+    "UVMappedTexture": texture_to_vtk,
+    "HasTexturesMixin": texture_to_vtk,
+    # Surfaces
+    "Surface": surface_to_vtk,
+    "BaseSurfaceElement": surface_to_vtk,
+    "TensorGridSurface": surface_to_vtk,
+    # Block Models
+    "TensorGridBlockModel": volume_to_vtk,
+    "RegularBlockModel": volume_to_vtk,
+    "RegularSubBlockModel": volume_to_vtk,
+    "OctreeSubBlockModel": volume_to_vtk,
+    "ArbitrarySubBlockModel": volume_to_vtk,
+    "BaseBlockModel": volume_to_vtk,
 }
 
 
