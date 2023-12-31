@@ -34,9 +34,8 @@ def line_set_to_vtk(lse, origin=(0.0, 0.0, 0.0)):
     output["Line Index"] = indices
 
     # TODO: if subtype is borehole make a tube
-
+    add_data(output, lse.attributes)
     output.points += np.array(origin)
-    print("Lines from updated lib: ", output)
     return output
 
 

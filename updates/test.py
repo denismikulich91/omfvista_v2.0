@@ -1,18 +1,16 @@
-import omf
 import omfvista
 import pyvista as pv
-import omf.compat.omf_v1 as o_omf
-
+print("topo")
 proj = omfvista.load_project("../assets/test_file.omf")
 assay = proj["wolfpass_WP_assay"]
 topo = proj["Topography"]
 dacite = proj["Dacite"]
 vol = proj["Block Model"]
-proj.plot(multi_colors=True)
+# proj.plot(multi_colors=True)
 # Create a plotting window
 p = pv.Plotter(notebook=False)
 # Add the bounds axis
-p.show_bounds()
+# p.show_bounds()
 # p.add_bounding_box()
 
 # Add our datasets
@@ -22,7 +20,8 @@ p.add_mesh(
     color="orange",
     opacity=0.6,
 )
-thresh_vol = vol.threshold([0.2, 5])
+
+thresh_vol = vol.threshold([0.7, 5])
 
 p.add_mesh(thresh_vol, cmap="coolwarm", clim=vol.get_data_range())
 

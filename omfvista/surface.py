@@ -99,8 +99,8 @@ def surface_to_vtk(surfel, origin=(0.0, 0.0, 0.0)):
         builder = surface_grid_geom_to_vtk
 
     output = builder(geom, origin=origin)
+    add_data(output, surfel.attributes)
     add_texture_coordinates(output, surfel.textures, surfel.name)
-    print("Surface from updated lib: ", output)
     return output
 
 

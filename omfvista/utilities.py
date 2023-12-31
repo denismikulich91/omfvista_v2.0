@@ -43,8 +43,8 @@ def check_orthogonal(axis_u, axis_v, axis_w):
 
 def add_data(output, data):
     """Adds data arrays to an output VTK data object"""
-    for d in data.vertices:
-        output[data.name] = d
+    for d in data:
+        output[d.name] = d.array
     return output
 
 

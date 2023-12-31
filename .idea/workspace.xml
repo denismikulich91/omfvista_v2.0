@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="Seems to fixed texture_to_vtk function">
+    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="Updated volume.py to iterate through attributes instead of blocks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/load-project.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/load-project.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omfvista/lineset.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/lineset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/pointset.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/pointset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omfvista/surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/surface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omfvista/volume.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/volume.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omfvista/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/utilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/updates/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/updates/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +48,7 @@
     "Python.surface.executor": "Run",
     "Python.test.executor": "Run",
     "Python.utilities.executor": "Run",
+    "Python.volume.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "DMH5",
@@ -112,7 +112,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704025522106</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="All seems to be working now. At least all test_data visualized as it was in the legacy version">
+      <option name="closed" value="true" />
+      <created>1704031528339</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704031528339</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated volume.py to iterate through attributes instead of blocks">
+      <option name="closed" value="true" />
+      <created>1704035635649</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704035635649</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +147,8 @@
     <MESSAGE value="Updated point_set_to_vtk function" />
     <MESSAGE value="Updated lineset_set_to_vtk function in lineset.py" />
     <MESSAGE value="Seems to fixed texture_to_vtk function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seems to fixed texture_to_vtk function" />
+    <MESSAGE value="All seems to be working now. At least all test_data visualized as it was in the legacy version" />
+    <MESSAGE value="Updated volume.py to iterate through attributes instead of blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated volume.py to iterate through attributes instead of blocks" />
   </component>
 </project>
