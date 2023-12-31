@@ -140,6 +140,7 @@ def load_project(filename, load_textures=False):
 #     "Project": project_to_vtk,
 # }
 WRAPPERS = {
+    "Project": project_to_vtk,
     "LineSet": line_set_to_vtk,
     "PointSet": point_set_to_vtk,
     # Textures
