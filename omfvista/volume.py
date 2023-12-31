@@ -69,22 +69,14 @@ def volume_to_vtk(volelement, origin=(0.0, 0.0, 0.0)):
 
     """
 
-    def generate_block_indices(block_model):
-        block_indices = []
-
-        for k in range(len(block_model.tensor_u)):
-            for j in range(len(block_model.tensor_v)):
-                for i in range(len(block_model.tensor_w)):
-                    block_indices.append((i, j, k))
-
-        return block_indices
-
     # TODO: remove TensorGridBlockModel as hardcoded
 
-    flattened_array = generate_block_indices(volelement)
     output = volume_grid_geom_to_vtk(volelement, origin=origin)
-    output[volelement.name] = flattened_array
-    print("BM from updated lib: ", output)
+    shp = get_volume_shape(volelement)
+    # Add data to output
+    for attribute in volelement.attributes:
+        arr = np.reshape(attribute.array, shp).flatten(order="F")
+        output[attribute.name] = arr
     return output
 
 
