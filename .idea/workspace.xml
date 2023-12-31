@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/omfVista_v2.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="Seems to fixed texture_to_vtk function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/load-project.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/load-project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/lineset.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/lineset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/surface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/volume.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/volume.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/updates/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/updates/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +42,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Doctests in wrapper.executor": "Run",
+    "Python.lineset.executor": "Run",
     "Python.load-project.executor": "Run",
+    "Python.pointset.executor": "Run",
+    "Python.surface.executor": "Run",
     "Python.test.executor": "Run",
+    "Python.utilities.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "DMH5",
     "last_opened_file_path": "/Users/denismikulich91/PycharmProjects/omfVista_v2.0/.venv/lib/python3.12/site-packages",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -76,6 +80,39 @@
       <option name="presentableId" value="Default" />
       <updated>1703964646520</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated  WRAPPERS dict with updated OMF Classes as keys">
+      <option name="closed" value="true" />
+      <created>1703973673711</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703973673711</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated point_set_to_vtk function">
+      <option name="closed" value="true" />
+      <created>1703978161844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703978161844</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated lineset_set_to_vtk function in lineset.py">
+      <option name="closed" value="true" />
+      <created>1704024444521</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704024444521</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Seems to fixed texture_to_vtk function">
+      <option name="closed" value="true" />
+      <created>1704025522106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704025522106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +125,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated  WRAPPERS dict with updated OMF Classes as keys" />
+    <MESSAGE value="Updated point_set_to_vtk function" />
+    <MESSAGE value="Updated lineset_set_to_vtk function in lineset.py" />
+    <MESSAGE value="Seems to fixed texture_to_vtk function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seems to fixed texture_to_vtk function" />
   </component>
 </project>

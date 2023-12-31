@@ -28,7 +28,7 @@ def volume_grid_geom_to_vtk(volgridgeom, origin=(0.0, 0.0, 0.0)):
         volgridgeom (:class:`omf.volume.VolumeGridGeometry`): the grid geometry
             to convert
     """
-    volgridgeom._validate_mesh()
+    volgridgeom.validate()
 
     ox, oy, oz = volgridgeom.origin
 
@@ -64,17 +64,27 @@ def volume_to_vtk(volelement, origin=(0.0, 0.0, 0.0)):
     """Convert the volume element to a VTK data object.
 
     Args:
-        volelement (:class:`omf.volume.VolumeElement`): The volume element to
+        volelement (:class:`omf.blockmodel.TensorGridBlockModel`): The volume element to
             convert
 
     """
-    output = volume_grid_geom_to_vtk(volelement.geometry, origin=origin)
-    shp = get_volume_shape(volelement.geometry)
-    # Add data to output
-    for data in volelement.data:
-        arr = data.array.array
-        arr = np.reshape(arr, shp).flatten(order="F")
-        output[data.name] = arr
+
+    def generate_block_indices(block_model):
+        block_indices = []
+
+        for k in range(len(block_model.tensor_u)):
+            for j in range(len(block_model.tensor_v)):
+                for i in range(len(block_model.tensor_w)):
+                    block_indices.append((i, j, k))
+
+        return block_indices
+
+    # TODO: remove TensorGridBlockModel as hardcoded
+
+    flattened_array = generate_block_indices(volelement)
+    output = volume_grid_geom_to_vtk(volelement, origin=origin)
+    output[volelement.name] = flattened_array
+    print("BM from updated lib: ", output)
     return output
 
 

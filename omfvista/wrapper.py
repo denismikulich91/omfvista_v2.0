@@ -123,7 +123,6 @@ def project_to_vtk(project, load_textures=False):
 def load_project(filename, load_textures=False):
     """Loads an OMF project file into a :class:`pyvista.MultiBlock` dataset"""
     project = omf.load(filename)
-    print(project)
     return project_to_vtk(project, load_textures=load_textures)
 
 
@@ -144,7 +143,6 @@ WRAPPERS = {
     "LineSet": line_set_to_vtk,
     "PointSet": point_set_to_vtk,
     # Textures
-    "ImageTexture": texture_to_vtk,
     "Image": texture_to_vtk,
     "ProjectedTexture": texture_to_vtk,
     "UVMappedTexture": texture_to_vtk,

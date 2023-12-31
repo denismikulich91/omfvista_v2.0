@@ -24,13 +24,10 @@ def point_set_to_vtk(pse, origin=(0.0, 0.0, 0.0)):
     """
     points = np.array(pse.vertices)
     output = pyvista.PolyData(points)
-
-    # Now add point data:
-    # add_data(output, pse)
-
     add_texture_coordinates(output, pse.textures, pse.name)
 
     output.points += np.array(origin)
+    print("Points from updated lib: ", output)
     return output
 
 

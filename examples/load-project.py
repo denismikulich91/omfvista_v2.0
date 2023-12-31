@@ -13,7 +13,6 @@ import omfvista
 # Load the project into an :class:`pyvista.MultiBlock` dataset
 
 project = omfvista.load_project("../assets/test_file.omf")
-print(project)
 
 ###############################################################################
 # Once the data is loaded as a :class:`pyvista.MultiBlock` dataset from
@@ -35,7 +34,7 @@ topo = project["Topography"]
 dacite = project["Dacite"]
 
 ###############################################################################
-
+print("assay", assay)
 assay.set_active_scalars("DENSITY")
 
 p = pv.Plotter()

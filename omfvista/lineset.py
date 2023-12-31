@@ -32,16 +32,11 @@ def line_set_to_vtk(lse, origin=(0.0, 0.0, 0.0)):
 
     indices = output.connectivity().cell_data["RegionId"]
     output["Line Index"] = indices
-    # Now add data to lines:
-    # output[lse.name] = indices
-    # output = pyvista.PolyData(points)
-    print(len(lse.segments.array))
-    # add_data(output, lse)
 
     # TODO: if subtype is borehole make a tube
 
     output.points += np.array(origin)
-    print(output)
+    print("Lines from updated lib: ", output)
     return output
 
 
