@@ -85,4 +85,4 @@ def texture_to_vtk(texture):
 
 def get_textures(element):
     """Get a dictionary of textures for a given element."""
-    return [texture_to_vtk(tex) for tex in element.textures]
+    return [texture_to_vtk(tex.image) for tex in element.textures]

@@ -85,26 +85,26 @@ def surface_grid_geom_to_vtk(surfgridgeom, origin=(0.0, 0.0, 0.0)):
 
 
 def surface_to_vtk(surfel, origin=(0.0, 0.0, 0.0)):
-    """Convert the surface to a its appropriate VTK data object type.
+    """Convert the surface to its appropriate VTK data object type.
 
     Args:
-        surfel (:class:`omf.surface.SurfaceElement`): the surface element to
+        surfel (:class:`omf.Surface`): the surface element to
             convert
     """
+    geom = surfel
 
-    geom = surfel.geometry
-
-    if isinstance(geom, omf.surface.SurfaceGeometry):
+    if isinstance(geom, omf.Surface):
         builder = surface_geom_to_vtk
-    elif isinstance(geom, omf.surface.SurfaceGridGeometry):
+    elif isinstance(geom, omf.TensorGridSurface):
         builder = surface_grid_geom_to_vtk
 
     output = builder(geom, origin=origin)
 
     # Now add point data:
-    add_data(output, surfel.data)
+    # add_data(output, surfel)
 
     add_texture_coordinates(output, surfel.textures, surfel.name)
+    print(surfel.textures)
 
     return output
 
