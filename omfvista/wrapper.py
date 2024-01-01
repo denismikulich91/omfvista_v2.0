@@ -51,7 +51,7 @@ __all__ = [
 __displayname__ = "Wrapper"
 
 import numpy as np
-import omf
+import modules.omf as omf
 import pyvista
 
 import omfvista

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="updated link under &quot;Open Mining Format package&quot; since old link leads to omf.readthedocs.io which provides old API desc">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updates/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/updates/test.py" afterDir="false" />
+    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="added omf and omf.compat modules locally to project to be able support compitability with old and new omf version">
+      <change beforePath="$PROJECT_DIR$/omfvista/surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/surface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/wrapper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,36 +49,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Doctests in wrapper.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for element_test.TestElements.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for element_test.TestElements.test_file_io.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_lineset.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_list_of_elements.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_pointset.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_project.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_surface.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_volume.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for project_test.TestProjectIO.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in element_test.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lineset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.load-project.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pointset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.surface.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.utilities.executor&quot;: &quot;Run&quot;,
-    &quot;Python.volume.executor&quot;: &quot;Run&quot;,
-    &quot;Python.web_app.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;DMH5&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/denismikulich91/PycharmProjects/omfVista_v2.0/.venv/lib/python3.12/site-packages/omf&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Doctests in wrapper.executor": "Run",
+    "Python tests.Python tests for element_test.TestElements.executor": "Run",
+    "Python tests.Python tests for element_test.TestElements.test_file_io.executor": "Run",
+    "Python tests.Python tests for element_test.TestElements.test_wrap_lineset.executor": "Run",
+    "Python tests.Python tests for element_test.TestElements.test_wrap_list_of_elements.executor": "Run",
+    "Python tests.Python tests for element_test.TestElements.test_wrap_pointset.executor": "Run",
+    "Python tests.Python tests for element_test.TestElements.test_wrap_project.executor": "Run",
+    "Python tests.Python tests for element_test.TestElements.test_wrap_surface.executor": "Run",
+    "Python tests.Python tests for element_test.TestElements.test_wrap_volume.executor": "Run",
+    "Python tests.Python tests for project_test.TestProjectIO.executor": "Run",
+    "Python tests.Python tests in element_test.py.executor": "Run",
+    "Python.lineset.executor": "Run",
+    "Python.load-project.executor": "Run",
+    "Python.pointset.executor": "Run",
+    "Python.surface.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.utilities.executor": "Run",
+    "Python.volume.executor": "Run",
+    "Python.web_app.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "DMH5",
+    "last_opened_file_path": "/Users/denismikulich91/PycharmProjects/omfVista_v2.0/modules",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/omf" />
       <recent name="$PROJECT_DIR$/.venv/lib/python3.12/site-packages" />
     </key>
@@ -88,7 +87,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for element_test.TestElements">
+  <component name="RunManager">
     <configuration name="Python tests for element_test.TestElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="omfVista_v2.0" />
       <option name="ENV_FILES" value="" />
@@ -262,7 +261,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704123353232</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="removed omf from install_requires list. Even latest version and beta doesn't have compat module">
+      <option name="closed" value="true" />
+      <created>1704128967535</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704128967535</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added omf and omf.compat modules locally to project to be able support compitability with old and new omf version">
+      <option name="closed" value="true" />
+      <created>1704129088530</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704129088530</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +301,8 @@
     <MESSAGE value="Seems like everything is fixed. However, all BM classes require testing" />
     <MESSAGE value="updated element_test.py, updated all tests. Tests passed 7/7" />
     <MESSAGE value="updated link under &quot;Open Mining Format package&quot; since old link leads to omf.readthedocs.io which provides old API desc" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated link under &quot;Open Mining Format package&quot; since old link leads to omf.readthedocs.io which provides old API desc" />
+    <MESSAGE value="removed omf from install_requires list. Even latest version and beta doesn't have compat module" />
+    <MESSAGE value="added omf and omf.compat modules locally to project to be able support compitability with old and new omf version" />
+    <option name="LAST_COMMIT_MESSAGE" value="added omf and omf.compat modules locally to project to be able support compitability with old and new omf version" />
   </component>
 </project>
