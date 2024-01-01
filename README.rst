@@ -18,7 +18,7 @@ providing Python 3D visualization and useable mesh data structures for
 processing datasets in the OMF specification.
 
 
-.. _Open Mining Format package: https://omf.readthedocs.io/en/latest/
+.. _Open Mining Format package: https://github.com/gmggroup/omf/tree/main
 
 Documentation is hosted at https://opengeovis.github.io/omfvista/
 
