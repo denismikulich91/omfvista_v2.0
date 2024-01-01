@@ -18,6 +18,7 @@ setuptools.setup(
     url="https://github.com/OpenGeoVis/omfvista",
     packages=setuptools.find_packages(),
     install_requires=[
+        "omf>=1.0.1",
         "vectormath>=0.2.2",
         "pyvista>=0.20.1",
         "numpy",
