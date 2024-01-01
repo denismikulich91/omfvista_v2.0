@@ -5,7 +5,7 @@ Load Surface from XYZ File
 Load a surface from a file of XYZ coordinates
 """
 import numpy as np
-import omf
+import modules.omf as omf
 
 # sphinx_gallery_thumbnail_number = 2
 import pandas as pd
@@ -42,16 +42,14 @@ warped.plot()
 ###############################################################################
 # Create an OMF element that can be saved out
 tris = warped.faces.reshape(surf.n_cells, 4)[:, 1:4]
-base_quaternary_omf = omf.SurfaceElement(
+base_quaternary_omf = omf.Surface(
     name="My Surface",
     description='This is a decription of "My Surface"',
-    geometry=omf.SurfaceGeometry(vertices=warped.points, triangles=tris),
-    data=[
-        omf.ScalarData(
-            name="My awesome data", array=np.array(surf["my data"]), location="vertices"
-        ),
-    ],
+    vertices=warped.points,
+    triangles=tris
 )
+base_quaternary_omf.attributes.append(omf.NumericAttribute(name="My awesome data", array=np.array(surf["my data"]),
+                                                           location="vertices"))
 base_quaternary_omf.validate()
 
 ###############################################################################

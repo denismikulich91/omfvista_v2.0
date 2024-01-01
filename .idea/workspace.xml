@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="added omf and omf.compat modules locally to project to be able support compitability with old and new omf version">
-      <change beforePath="$PROJECT_DIR$/omfvista/surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/surface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omfvista/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/wrapper.py" afterDir="false" />
+    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="updated omf module import to the local import">
+      <change beforePath="$PROJECT_DIR$/examples/load-surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/load-surface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,7 @@
     "Python tests.Python tests in element_test.py.executor": "Run",
     "Python.lineset.executor": "Run",
     "Python.load-project.executor": "Run",
+    "Python.load-surface.executor": "Run",
     "Python.pointset.executor": "Run",
     "Python.surface.executor": "Run",
     "Python.test.executor": "Run",
@@ -277,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704129088530</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated omf module import to the local import">
+      <option name="closed" value="true" />
+      <created>1704129479289</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704129479289</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,6 +311,7 @@
     <MESSAGE value="updated link under &quot;Open Mining Format package&quot; since old link leads to omf.readthedocs.io which provides old API desc" />
     <MESSAGE value="removed omf from install_requires list. Even latest version and beta doesn't have compat module" />
     <MESSAGE value="added omf and omf.compat modules locally to project to be able support compitability with old and new omf version" />
-    <option name="LAST_COMMIT_MESSAGE" value="added omf and omf.compat modules locally to project to be able support compitability with old and new omf version" />
+    <MESSAGE value="updated omf module import to the local import" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated omf module import to the local import" />
   </component>
 </project>
