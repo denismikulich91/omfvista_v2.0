@@ -10,7 +10,7 @@ __all__ = [
 __displayname__ = "Surface"
 
 import numpy as np
-import modules.omf as omf
+import omfvista.omf as omf
 import pyvista
 
 from omfvista.utilities import add_data, add_texture_coordinates, check_orthogonal

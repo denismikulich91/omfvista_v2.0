@@ -5,7 +5,7 @@ Load Surface from XYZ File
 Load a surface from a file of XYZ coordinates
 """
 import numpy as np
-import modules.omf as omf
+import omfvista.omf as omf
 
 # sphinx_gallery_thumbnail_number = 2
 import pandas as pd

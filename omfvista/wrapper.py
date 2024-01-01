@@ -51,15 +51,15 @@ __all__ = [
 __displayname__ = "Wrapper"
 
 import numpy as np
-import modules.omf as omf
+import omfvista.omf as omf
 import pyvista
 
 import omfvista
 from omfvista.lineset import line_set_to_vtk
 from omfvista.pointset import point_set_to_vtk
-from omfvista.surface import surface_geom_to_vtk, surface_grid_geom_to_vtk, surface_to_vtk
+from omfvista.surface import surface_to_vtk
 from omfvista.utilities import get_textures, texture_to_vtk
-from omfvista.volume import volume_grid_geom_to_vtk, volume_to_vtk
+from omfvista.volume import volume_to_vtk
 
 
 def wrap(data, origin=(0.0, 0.0, 0.0)):
@@ -70,7 +70,6 @@ def wrap(data, origin=(0.0, 0.0, 0.0)):
         data: any OMF data object
 
     Example:
-        >>> import omf
         >>> import omfvista
 
         >>> # Read all elements

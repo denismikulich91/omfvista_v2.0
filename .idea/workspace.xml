@@ -4,8 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="updated omf module import to the local import">
+    <list default="true" id="84a75291-e773-4806-9c66-2b5c522fb22b" name="Changes" comment="deleted working folder">
+      <change afterPath="$PROJECT_DIR$/omfvista/modules/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/load-surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/load-surface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/attribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/attribute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/blockmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/blockmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/compat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/compat/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/compat/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/compat/interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/compat/omf_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/compat/omf_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/composite.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/composite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/fileio.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/fileio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/lineset.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/lineset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/pointset.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/pointset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/surface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/omf/texture.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/modules/omf/texture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/surface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omfvista/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/omfvista/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/element_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/element_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,35 +66,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Doctests in wrapper.executor": "Run",
-    "Python tests.Python tests for element_test.TestElements.executor": "Run",
-    "Python tests.Python tests for element_test.TestElements.test_file_io.executor": "Run",
-    "Python tests.Python tests for element_test.TestElements.test_wrap_lineset.executor": "Run",
-    "Python tests.Python tests for element_test.TestElements.test_wrap_list_of_elements.executor": "Run",
-    "Python tests.Python tests for element_test.TestElements.test_wrap_pointset.executor": "Run",
-    "Python tests.Python tests for element_test.TestElements.test_wrap_project.executor": "Run",
-    "Python tests.Python tests for element_test.TestElements.test_wrap_surface.executor": "Run",
-    "Python tests.Python tests for element_test.TestElements.test_wrap_volume.executor": "Run",
-    "Python tests.Python tests for project_test.TestProjectIO.executor": "Run",
-    "Python tests.Python tests in element_test.py.executor": "Run",
-    "Python.lineset.executor": "Run",
-    "Python.load-project.executor": "Run",
-    "Python.load-surface.executor": "Run",
-    "Python.pointset.executor": "Run",
-    "Python.surface.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.utilities.executor": "Run",
-    "Python.volume.executor": "Run",
-    "Python.web_app.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "DMH5",
-    "last_opened_file_path": "/Users/denismikulich91/PycharmProjects/omfVista_v2.0/modules",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Doctests in wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for element_test.TestElements.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for element_test.TestElements.test_file_io.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_lineset.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_list_of_elements.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_pointset.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_project.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_surface.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for element_test.TestElements.test_wrap_volume.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for project_test.TestProjectIO.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in element_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lineset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.load-project.executor&quot;: &quot;Run&quot;,
+    &quot;Python.load-surface.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pointset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.surface.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utilities.executor&quot;: &quot;Run&quot;,
+    &quot;Python.volume.executor&quot;: &quot;Run&quot;,
+    &quot;Python.web_app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DMH5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/denismikulich91/PycharmProjects/omfVista_v2.0/modules&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules" />
@@ -84,6 +102,7 @@
       <recent name="$PROJECT_DIR$/.venv/lib/python3.12/site-packages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/omfvista" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -285,7 +304,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704129479289</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="updated examples with new omf interface">
+      <option name="closed" value="true" />
+      <created>1704129800395</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704129800395</updated>
+    </task>
+    <task id="LOCAL-00014" summary="deleted working folder">
+      <option name="closed" value="true" />
+      <created>1704129864996</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704129864996</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,6 +347,8 @@
     <MESSAGE value="removed omf from install_requires list. Even latest version and beta doesn't have compat module" />
     <MESSAGE value="added omf and omf.compat modules locally to project to be able support compitability with old and new omf version" />
     <MESSAGE value="updated omf module import to the local import" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated omf module import to the local import" />
+    <MESSAGE value="updated examples with new omf interface" />
+    <MESSAGE value="deleted working folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted working folder" />
   </component>
 </project>

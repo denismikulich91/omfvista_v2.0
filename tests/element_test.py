@@ -4,7 +4,7 @@ import tempfile
 import unittest
 
 import numpy as np
-import modules.omf as omf
+import omfvista.omf as omf
 import pyvista
 
 import omfvista
